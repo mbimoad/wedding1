@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+@font-face {
+	font-family:'n4';
+	src: url('../plugin/font/normal/n4.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s6';
+	src: url('../plugin/font/sambung/s6.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s7';
+	src: url('../plugin/font/sambung/s7.ttf') format('truetype');
+}
+ .font_s1 {
+    font-family: s7;
+} .font_s6 {
+    font-family: s6;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} body {
+    overflow-x: hidden;
+    height: 100vh;
+    font-family: n4;
+} .wallet {
+    width:120px;
+} .protocol {
+    opacity: 0;
+    transition: all 1000ms ease 0s;
+} .protocol.muncul {
+    opacity: 1;
+}
+.slick-next {transform: translateX(-30px);}
+.slick-prev {transform: translateX(30px);}
+
+.datetime .fontku {
+    color:var(--color1);
+}
+.fontku {
+    font-family:font_s6; 
+    font-weight: bold;   
+} .myfont {
+    font-size: 1.9rem;
+    font-weight: unset;
+} .mf2 {
+    font-size: 14px;
+} .m3 {
+    font-size: 12px;
+}
+:root {
+    
+    --background: rgb(33,31,47);
+    
+    --color1: rgb(161,113,50);
+    --color2: rgb(240,208,99);
+    --color3: rgb(240,238,156);
+    --color4: rgb(238,197,76);
+    --color5: rgb(147,98,47);
+}
+.dompet .card {
+    background:linear-gradient(90deg, 
+        rgb(161,113,50),
+        rgb(240,208,99),
+        rgb(240,238,156),
+        rgb(238,197,76),
+        rgb(147,98,47)
+    );
+    border: 7px solid var(--color1);
+}
+.page-link:hover {
+    color:white;
+} .page-link {
+    transition: all 200ms ease 0s;
+}
+.quran {
+    border: 10px double var(--color2);
+    padding: 20px;
+    box-sizing: border-box;
+}
+body {background-color:var(--background);}
+.title {
+    background: -webkit-linear-gradient(90deg,
+        rgb(161,113,50) 10%,
+        rgb(240,208,99) 50%,
+        rgb(240,238,156) 20%,
+        rgb(238,197,76) 15%,
+        rgb(147,98,47) 5%    
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} .title2 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.image {
+    position: relative;
+    border:2px solid var(--color3); 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    background-image: url('nikah.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 200ms ease 0s;
+    animation: terang 1s ease 0s infinite;
+    animation-direction: alternate-reverse;
+} .invite {
+    transition: all 500ms ease 0s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    background-color:var(--background);
+} .invite button {
+    border: unset;
+    background:var(--color1);
+    color:white;
+    transition: all 200ms ease 0s;
+} .invite button:hover {
+    background:var(--color5);
+} .buka {
+    transform: translate(-100%, 0);
+    opacity: 0;
+} .myicon {
+    display: none;
+    color:white;
+    text-align: center;
+    width: 35px;
+    height: 34px;
+    padding: 5px;
+    border-radius: 50%;
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    bottom: 50%;
+    z-index: 9999999999999999999999999999999999;
+    background: var(--color5);
+} 
+
+
+@keyframes terang {
+    to {
+        box-shadow: 0px 5px 50px var(--color2);
+    }
+}
+
+
+.logo {
+    width: 400px;
+    position: fixed;
+    z-index: 999;
+} .logo1 {
+    pointer-events: none;
+    transition: all 500ms ease 0s;
+    top: -30px;
+    right: -50px;
+} .logo2 {
+    pointer-events: none;
+    transition: all 500ms ease 0s;
+    width:250px;
+    top: -50px;
+    left: -40px;
+} .logo3 {
+    pointer-events: none;
+    transition: all 500ms ease 0s;
+    width: 300px;
+    bottom: -20px;
+    left: -70px;
+} .logo4 {
+    pointer-events: none;
+    transition: all 500ms ease 0s;
+    width: 150px;
+    bottom: -20px;
+    right: -10px;
+} .flower {
+    width: 120px;
+    position: absolute;
+} .image {
+    position: relative;
+} .teks {
+    font-size: 1.9vw;
+} .box {
+    border-radius: 10px;
+    width: 100px;
+    height: 80px;
+    font-size: 22px;
+    border: 2px solid var(--color5);
+    background: -webkit-linear-gradient(90deg,
+        rgb(240,208,99),
+        rgb(238,197,76)
+    );
+    
+    font-weight: bold;
+    text-align: center;
+} .flex {
+    gap: 10px;
+} .datetime {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:912px) {
+    .logo {
+        width: 230px;
+    } .logo1 {
+        top: -20px;
+        right: -30px;
+    } .logo2 {
+        width:160px;
+        top: -20px;
+        left: -30px;
+    } .logo3 {
+        width: 150px;
+        bottom: -10px;
+        left: -30px;
+    } .logo4 {
+        width: 120px;
+        bottom: -10px;
+        right: -20px;
+    } 
+}
+
+@media screen and (max-width:550px) {
+    .teks {
+        font-size: 1rem;
+    }
+    .logo {
+        width: 130px;
+    } .logo1 {
+        top: -10px;
+        right: -20px;
+    } .logo2 {
+        width: 90px;
+        top: -12px;
+        left:-15px;
+    } .logo3 {
+        width: 90px;
+        bottom: 0px;
+        left: -20px;
+    } .logo4 {
+        width: 90px;
+        bottom: -10px;
+        right: -10px;
+    }  
+    .box {
+        width: 60px;
+        height: 40px;
+        font-size: 11px;
+    } .small {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:460px) {
+    .logo {
+        width: 90px;
+    } .logo1 {
+        top: -0px;
+        right: -15px;
+    } .logo2 {
+        width: 60px;
+        top: -10px;
+        left: -10px;
+    } .logo3 {
+        width: 60px;
+        bottom: 0px;
+        left: -10px;
+    } .logo4 {
+        width: 50px;
+        bottom: -10px;
+        right: -10px;
+    }  .box {
+        width: 80px;
+        height: 60px;
+        font-size: 1rem;
+    }
+} 
+
+.frame {
+    width:210px;
+    position: absolute;
+    left: -48px;
+    top: -7px;
+} .small {
+    font-size: 20px;
+}
+
+
+ .wallet-text {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 0px 0px 2px var(--color1);
+} .wallet {
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 30px;
+} .copy {
+    background: var(--color1);
+    border: unset;
+} .copy:hover {
+    background-color: rgb(110, 76, 31);
+} .wallet-deskripsi {
+    color:var(--color2);
+} .health-protocol p {
+    font-family: 'Itim', cursive;
+} .protocol {
+    border: 5px solid var(--color3);
+    padding: 10px;
+    color:white;
+    background-color: var(--background);
+    border-radius: 25px;
+    transition: all 200ms ease 0s;
+} .protocol:hover {
+    background-color: white;
+    color:black;
+} 
+
+
+.form-control {
+    background-color: transparent;
+    border: 3px solid var(--color3);
+    color:var(--color2);
+} .absensi {
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0 5px;
+    color:black;
+    background-color: var(--color4);
+}
+.form-control:focus {
+    background-color: transparent;
+    box-shadow: 0 0 0 0.25rem var(--color1);
+    color:var(--color3);
+}
+.comment-title {
+    color:salmon;
+} .komentar .card {
+    background-color: transparent;
+    border: 2px solid var(--color2);
+} .comment-deskripsi {
+    color:white;
+} .copyright {
+    background-color: red;
+    color:white; 
+    border: 2px solid white;
+} .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    color:var(--color3);
+} .shopee {
+    text-decoration: none;
+    color:var(--color1);
+    transition: all 200ms ease 0s;
+} .shopee:hover {
+    color:white; 
+} .nav {
+    display: none;
+    box-shadow: 0 0 5px #ddd;
+    position: fixed;
+    bottom: 20px;
+    border-radius: 150px;
+    left: 0;
+    right: 0;
+    z-index: 999999999999999999999999999999999;
+    background-color: var(--background);
+    width: 95%;
+    padding: 10px 0;
+    margin: auto;
+} .nav a {
+    color:white;
+} .nav a:focus {
+    color:lightskyblue;
+}
+
+
+.love-story hr {
+    display: none;
+	width: 10px;
+	background-color: var(--color1);
+	border-radius: 50px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+} .note {
+    width: 18rem;
+	background-color:var(--color3);
+	color:black;
+	padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+} .note::before {
+    content: '❤️';
+    color:white;
+	width: 22px;
+	height: 22px;
+	display: block;
+	position: absolute;
+	left: -35px;
+	text-align: center;
+	background-color: var(--color1);
+	border-radius: 50px;
+} .notes {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 30px;
+} .story-img {
+    width: 100%;
+} .hilang {
+	opacity: 0;
+	transform: translate(0, 30px);
+	transition: all 500ms ease 0s;
+} .muncul {
+	opacity: 1;
+	transform: translate(0, 0);
+} .undangan {
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+
+@media screen and (max-width:683px) {
+    .love-story hr {
+        display: block;
+    } .notes {
+        flex-direction: column;
+    } .note {
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+    } 
+}
+
+.comments-box {
+    height: 250px;
+    overflow:auto;
+}
+
